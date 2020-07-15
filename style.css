@@ -1,3 +1,631 @@
 body {
+  margin: 0;
   font-family: MontserratRegular;
+  min-width: 320px;
 }
+
+/* шапка --------------------------------------------------------------*/
+.header {
+   max-width: 1440px;
+  }
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1388px;
+  min-width: 200px;
+  height: 51px;
+  margin: 24px 43px 0 43px;
+}
+.header__container-img {
+  width: 166px;
+  height: 51px;
+}
+.header__container-nav-list  {
+  position: absolute;
+  min-width: 150px;
+  height: 51px;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  left: 426px;
+}
+
+.nav__link1 {
+  padding-right: 64px;  
+  color: #E51937;
+}
+.nav__link2 {
+  padding-right: 28px;
+}
+.nav__link3 {
+  padding-right: 46px;
+}
+.nav__link4 {
+  padding-right: 48px;
+}
+.header__menu {
+  position: absolute;
+  max-width: 250px;
+  min-width: 100px;
+  height: 51px;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  left: 1136px;
+}
+.menu__link {
+  position: absolute;
+  min-width: 50px;
+  height: 51px;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+}
+.menu__link1, .menu__link2 {
+  padding-right: 30px;
+}
+.menu__link-img {
+  position: absolute;
+  margin-top: 18px;
+  left: 1314px;
+}
+
+.nav__link1, .nav__link2, .nav__link3, .nav__link4, .nav__link5,
+.menu__link1, .menu__link2, .menu__link-img {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+}
+.nav__link1:hover, .nav__link2:hover, .nav__link3:hover, .nav__link4:hover, .nav__link5:hover, 
+.menu__link1:hover, .menu__link2:hover {
+  color: #E51937;
+  border-bottom: 2px solid #E51937;
+  padding-bottom: 10px;
+  cursor: pointer;
+} 
+/* адаптив шапки лишнее удалю при своде------------------------ */
+@media (max-width: 768px) {
+ .header__container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 768px;
+  min-width: 200px;
+  height: 51px;
+  margin: 23px 14px 0 14px;
+ }
+ .header__container-nav-list, .header__menu {
+   display: none;
+ }
+ .menu__link-img {
+  position: absolute;
+  margin-top: 14px;
+  left: 686px;
+ }
+ .burger {
+  width: 35.23px;
+  height: 22.02px;
+ }
+}
+@media (max-width: 375px) {
+  .header__container {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   max-width: 375px;
+   min-width: 200px;
+   height: 51px;
+   margin: 5px 0 0 -1px;
+  }
+  .header__container-img {
+    margin-right: 256px;
+    width: 138px;
+    height: 42px;
+  }
+  .header__container-nav-list, .header__menu {
+    display: none;
+  }
+  .menu__link-img {
+   position: absolute;
+   margin-top: -20px;
+   left: 330px;
+   top: 35px;
+  }
+  .burger {
+    width: 24px;
+    height: 15px;
+  }
+ }
+ /* ------------------------------------------------- */
+
+/* первая секция -----------------------------------------------------------------------------*/
+.section1__title {
+  position: absolute;
+  width: 380px;
+  height: 110px;
+  left: 535px;
+  top: 74px;
+  font-family: MontserratSemiBold;
+  font-weight: 600;
+  font-size: 90px;
+}
+.section1__text {
+  position: absolute;
+  margin: 0;
+  width: 241px;
+  height: 19px;
+  left: 600px;
+  top: 234px;
+  font-family:MontserratMedium;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+/* адаптив титла первой секции------------------------- */
+@media (max-width: 768px) {
+  .section1__title {
+    position: absolute;
+    width: 380px;
+    height: 110px;
+    left: 199px;
+    top: 94px;
+    font-weight: 600;
+    font-size: 90px;
+  }
+  .section1__text {
+    position: absolute;
+    margin: 0;
+    width: 241px;
+    height: 19px;
+    left: 265px;
+    top: 257px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  } 
+}
+@media (max-width: 375px) {
+  .section1__title {
+    position: absolute;
+    width: 214px;
+    height: 61px;
+    left: 83px;;
+    top: 43px;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .section1__text {
+    position: absolute;
+    margin: 0;
+    width: 161px;
+    height: 13px;
+    left: 106px;
+    top: 134px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+  } 
+}
+/* ------------------------------------------------------- */
+.section1__img-wordmark {
+  position: absolute;
+  left: 0px;
+  top: 134px;
+}
+.section1__img-car {
+  position: absolute;
+  width: 968px;
+  height: 450px;
+  left: 199px;
+  top: 278px;
+}
+/* адаптив картинок первой секции------------------------- */
+@media (max-width: 768px) {
+  .section1__img-wordmark {
+    position: absolute;
+    width: 821.81px;
+    height: 271.49px;
+    left: calc(50% - 768px/2 - 0px);
+    top: 252px;
+  }
+  .section1__img-car {
+    position: absolute;
+    width: 700px;
+    height: 327.64px;
+    left: calc(50% - 700px/2 + 10px);
+    top: 361.3px;
+  } 
+}
+@media (max-width: 375px) {
+  .section1__img-wordmark {
+    position: absolute;
+    width: 430px;
+    height: 139px;
+    left: -22px;
+    top: 156px;
+  }
+  .section1__img-car {
+    position: absolute;
+    width: 357px;
+    height: 166px;
+    left: 7px;
+    top: 196px;
+  }
+}
+ /* --------------------------------------------------------------------------------------------------*/ 
+.section1__wrap-character {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  min-width: 200px;
+  height: 58px;
+  left: 318px;
+  top: 686px;
+  margin: 0;
+}
+.wrap__speed {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 58px;
+}
+.wrap__speed-img {
+  position: absolute;
+  width: 54px;
+  height: 44px;
+}
+.wrap__speed-text-big {
+  padding-left: 62px;
+  margin-top: 8px;
+  word-spacing: -2px;
+}
+.wrap__speed-text-small {
+  position: absolute;
+  left: 63px;
+  padding-top: 3px;
+}
+.wrap__road {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 58px;
+}
+.wrap__road-img {
+  position: absolute;
+  left: 233px;
+}
+.wrap__road-text-big {
+  padding-left: 78px;
+  margin-top: 8px;
+  word-spacing: -2px;
+}
+.wrap__road-text-small {
+  position: absolute;
+  left: 280px;
+  padding-top: 3px;
+}
+.wrap__speed-text-big, .wrap__road-text-big {
+  font-family: MontserratSemiBold;
+  font-weight: 600;
+  font-size: 35px;
+}
+.wrap__speed-text, .wrap__road-text {
+  font-family: MontserratSemiBold;
+  font-weight: 600;
+  font-size: 20px;
+}
+.wrap__speed-text-small, .wrap__road-text-small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+.wrap__test {
+  position: absolute;
+  width: 118px;
+  height: 22px;
+  left: 801px;
+  top: 776px;
+}
+.wrap__test-text {
+  position: absolute;
+  width: 89px;
+  height: 18px;
+  padding-left: 29px;
+  margin-top: 0;
+  top: 0;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wrap__btn-link {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 959px;
+  top: 765px;
+  border: 2px solid #E51937;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #E51937;
+}
+.wrap__btn-link:hover {
+  background-color: #E51937;
+  color: #fff;
+}
+.section1__btn {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 6px 36px;
+}
+.section1__switch {
+  position: absolute;
+  left: 704px;
+  top: 848px;
+}
+
+/* адаптив вложения первой секции------------------ */
+@media (max-width: 768px) {
+  .section1__wrap-character {
+    position: absolute;
+    width: 487.27px;
+    height: 83.12px;
+    left: 136px;
+    top: 730px;
+  }
+  .wrap__speed {
+    display: flex;
+    align-items: center;
+    width: 244px;
+    height: 83px;
+  }
+  .wrap__speed-img {
+    position: absolute;
+    width: 76px;
+    height: 58px;
+  }
+  .wrap__speed-text-big {
+    padding-left: 90px;
+    margin-top: 24px;
+    word-spacing: -2px;
+  }
+  .wrap__speed-text {
+    line-height: 24px;
+  }
+  .wrap__speed-text-small {
+    position: absolute;
+    left: 92px;
+    padding-top: 20px;
+  }
+  .wrap__road {
+    display: flex;
+    align-items: center;
+    width: 244px;
+    height: 83px;
+  }
+  .wrap__road-img {
+    position: absolute;
+    left: 288px;
+    top: 10px;
+    width: 50px;
+    height: 82px;
+  }
+  .wrap__road-text-big {
+    padding-left: 108px;
+    margin-top: 30px;
+    word-spacing: -2px;
+  }
+  .wrap__road-text-small {
+    position: absolute;
+    left: 352px;
+    padding-top: 18px;
+  }
+  .wrap__speed-text-big, .wrap__road-text-big {
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .wrap__speed-text, .wrap__road-text {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .wrap__speed-text-small, .wrap__road-text-small {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .wrap__test-img {
+    width: 30.37px;
+    height: 30.37px;
+  }
+  .wrap__test {
+    position: absolute;
+    width: 240px;
+    height: 22px;
+    left: 174px;
+    top: 875px;
+  }
+  .wrap__test-text {
+    position: absolute;
+    width: 110px;
+    height: 18px;
+    padding-left: 46px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E51937; 
+  }
+  .wrap__btn-link {
+    position: absolute;
+    width: 221px;
+    height: 55px;
+    left: 372px;
+    top: 864px;
+    border: 2px solid #E51937;
+    box-sizing: border-box;
+    background-color: #E51937;
+    color: #fff;
+  }
+  .wrap__btn-link:hover {
+    background-color: #fff;
+    color: #E51937;
+  }
+  .section1__btn {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section1__switch {
+    position: absolute;
+    left: 368px;
+    top: 980px;
+  }
+}
+@media (max-width: 375px) {
+  .section1__wrap-character {
+    position: absolute;
+    width: 300px;
+    height: 53px;
+    left: 36px;
+    top: 384px;
+  }
+  .wrap__speed {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 53px;
+  }
+  .wrap__speed-img {
+    position: absolute;
+    width: 44px;
+    height: 34px;
+  }
+  .wrap__speed-text-big {
+    padding-left: 54px;
+    margin-top: 17px;
+    word-spacing: px;
+  }
+  .wrap__speed-text-small {
+    position: absolute;
+    left: 54px;
+    padding-top: 10px;
+  }
+  .wrap__road {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 53px;
+  }
+  .wrap__road-img {
+    position: absolute;
+    left: 170px;
+    top: 6px;
+    width: 24.04px;
+    height: 48px;
+  }
+  .wrap__road-text-big {
+    padding-left: 57px;
+    margin-top: 20px;
+    }
+  .wrap__road-text-small {
+    position: absolute;
+    left: 208px;
+    padding-top: 14px;
+  }
+  .wrap__speed-text-big, .wrap__road-text-big {
+    font-family: MontserratBold;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .wrap__speed-text, .wrap__road-text {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .wrap__speed-text-small, .wrap__road-text-small {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .wrap__test-img {
+    width: 25px;
+    height: 25px;
+  }
+  .wrap__test {
+    position: absolute;
+    width: 150px;
+    height: 22px;
+    left: 33px;
+    top: 485px;
+  }
+  .wrap__test-text {
+    position: absolute;
+    width: 110px;
+    height: 18px;
+    padding-left: 20px;
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #E51937; 
+    text-shadow: none;
+  }
+  .wrap__btn-link {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    left: 176px;
+    top: 477px;
+    border: 2px solid #E51937;
+    box-sizing: border-box;
+    background-color: #E51937;
+    color: #fff;
+  }
+  .wrap__btn-link:hover {
+    background-color: #fff;
+    color: #E51937;
+  }
+  .section1__btn {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .section1__switch {
+    position: absolute;
+    width: 34px;
+    height: 18px;
+    left: 170px;
+    top: 548px;
+  }
+}
+
+.section2, .section3 {
+  display: none;
+ }
