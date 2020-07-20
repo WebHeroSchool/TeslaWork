@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__container">
-     <img class="header__container-img" src="./img/1icon.png">
+  <div class="container">
+    <div class="inner">
+    <header class="header">
+      <div class="header__container">
+        <img class="header__container-img" src="./img/1icon.png">
         <nav class="header__container-nav-list">
           <a class="nav__link1" href="#">Model S</a>
           <a class="nav__link2" href="#">Model X</a>
@@ -23,34 +25,40 @@
           <a class="menu__link2" href="#">Войти</a>
         </div>
           <a class="menu__link-img" href="#"><img class="burger" src="./img/2burger.png"></a>
-    </div>
-  </header>
-  <section1 class="section1">
-    <h1 class="section1__title">Model S</h1>
-    <p class="section1__text">Добро пожаловать в будущее!</p>
-    <img class="section1__img-wordmark" src="./img/3Tesla-Wordmark-Red.png">
-    <img class="section1__img-car" src="./img/4car.png">
-    <div class="section1__wrap">
-      <div class="section1__wrap-character">
-        <div class="wrap__speed">
-          <img class="wrap__speed-img" src="./img/5time.png">
-          <p class="wrap__speed-text-big">2,7 <span class="wrap__speed-text">сек</span></p>
-          <p class="wrap__speed-text-small">0-100 км/час</p>
+      </div>
+    </header>
+    <section1 class="section1">
+      <div class="section1__headline">
+        <h1 class="section1__title">Model S</h1>
+        <p class="section1__text">Добро пожаловать в будущее!</p>
+      </div>
+      <div class="section1__img"><img class="section1__img-wordmark" src="./img/3Tesla-Wordmark-Red.png"></div>
+      <div class="section1__image"><img class="section1__img-car" src="./img/4car.png"></div>
+      <div class="section1__wrap">
+        <div class="section1__wrap-character">
+          <div class="wrap__speed">
+            <div class="wrap__speed-img"><img class="speed__img" src="./img/5time.png"></div>
+            <div class="wrap__speed-text">
+              <p class="wrap__speed-text-big">2,7 <span class="wrap__speed-text-span">сек</span></p>
+              <p class="wrap__speed-text-small">0-100 км/час</p>
+            </div>
+          </div>
+          <div class="wrap__road">
+            <div class="wrap__road-img"><img class="road__img" src="./img/6Road.png"></div>
+            <div class="wrap__road-text">
+              <p class="wrap__road-text-big">632 <span class="wrap__road-text-span">км</span></p>
+              <p class="wrap__road-text-small">запас хода</p>
+            </div>
+          </div>
         </div>
-        <div class="wrap__road">
-          <img class="wrap__road-img" src="./img/6Road.png">
-          <p class="wrap__road-text-big">632 <span class="wrap__road-text">км</span></p>
-          <p class="wrap__road-text-small">запас хода</p>
+        <div class="wrap__test">
+          <img class="wrap__test-img" src="./img/7testdrive.png">
+          <p class="wrap__test-text">Тест драйв</p>
         </div>
+        <button class="wrap__btn-link">Заказать</button>
       </div>
-      <div class="wrap__test">
-        <img class="wrap__test-img" src="./img/7testdrive.png">
-        <p class="wrap__test-text">Тест драйв</p>
-      </div>
-        <button class="wrap__btn-link" href="#"><a class="section1__btn">Заказать</a></button>
-      </div>
-     <img class="section1__switch" src="./img/8switch.png">
-  </section1>
+      <img class="section1__switch" src="./img/8switch.png">
+    </section1>
   <section2 class="section2">
     <h2 class="section2__title">Model S</h2>
     <img class="section2__img" src="./img/12_2013-tesla-model-s-cockpit.png">
@@ -167,6 +175,8 @@
       <img class="section3__logo-img" src="./img/school.png">
     </div>
   </section3>
+  </div>
+  </div>
 </body>
 
 </html>
