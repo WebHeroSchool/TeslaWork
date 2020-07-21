@@ -1,10 +1,8 @@
 body {
   width: 100vh;
   margin: 0;
-  font-family: MontserratRegular;
-  
+  font-family: MontserratRegular; 
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +15,6 @@ body {
   width: 1440px;
   min-width: 320px;
 }
-
 .inner {
   position: relative;
   width: 1337px;
@@ -25,6 +22,7 @@ body {
 }
 
 /* шапка------------------------------------------------------------------------------------------- */
+
 .header {
   position: relative;
   top: 0;
@@ -32,7 +30,6 @@ body {
   height: 75px;
   margin: 0 auto;
 }
-
 .header__container {
   position: relative;
   width: 1337px;
@@ -42,7 +39,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .header__container-nav-list {
   position: absolute;
   display: flex;
@@ -84,19 +80,19 @@ body {
   text-decoration: none;
   color: black;
 }
-.nav__link1:hover, .nav__link2:hover, .nav__link3:hover, .nav__link4:hover, .nav__link5:hover, 
-.menu__link1:hover, .menu__link2:hover {
+.header__container-nav-list>a:hover, 
+.header__menu>a:hover {
   color: #E51937;
   border-bottom: 2px solid #E51937;
   padding-bottom: 10px;
   cursor: pointer;
 } 
-
 .menu__link-img {
   position: absolute;
   margin-top: 18px;
   margin-left: 1312px;
 }
+
 /* -------------------------------------------------------------------------------------------------------- */
 
 .section1 {
@@ -128,7 +124,6 @@ body {
   text-align: center;
   margin-top: -10px;
 }
-
 .section1__img {
   position: absolute;
   width: 1440px;
@@ -147,7 +142,6 @@ body {
   width: 968px;
   height: 450px;
 }
-
 .section1__wrap {
   position: relative;
   width: 798px;
@@ -162,11 +156,7 @@ body {
   width: 386px;
   height: 58px;
 }
-.wrap__speed {
-  display: flex;
-  justify-content: flex-start;
-}
-.wrap__road {
+.wrap__speed, .wrap__road {
   display: flex;
   justify-content: flex-start;
 }
@@ -211,13 +201,13 @@ body {
   margin-right: 8px;
 }
 .wrap__test-text {
-font-family: MontserratBold;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;
-text-transform: uppercase;
-margin-top: 3px;
-text-shadow: 2px 2px 2px #ccc;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  text-shadow: 2px 2px 2px #ccc;
 }
 .wrap__btn-link {
   position: absolute;
@@ -346,9 +336,9 @@ text-shadow: 2px 2px 2px #ccc;
   left: 44px;
   }
  .wrap__test-img {
-  width: 30.37px;
-  height: 30.37px;
-  margin-right: 18px;
+    width: 30.37px;
+    height: 30.37px;
+    margin-right: 18px;
   }
   .wrap__test-text {
     font-family: MontserratBold;
@@ -528,8 +518,6 @@ text-shadow: 2px 2px 2px #ccc;
     left: 168px;
   }
 }
-
-
 
 .section2, .section3 {
   display: none;
