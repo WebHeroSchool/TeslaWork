@@ -57,7 +57,7 @@ body {
   margin-right: 44px;
 }
 .nav__link4 {
-  margin-right: 44px;
+  margin-right: 45px;
 }
 
 .header__menu {
@@ -146,7 +146,7 @@ body {
   position: relative;
   width: 798px;
   height: 58px;
-  top: 494px;
+  top: 492px;
   margin: 0 auto;
 }
 .section1__wrap-character {
@@ -518,9 +518,638 @@ body {
     left: 168px;
   }
 }
-
-.section2, .section3 {
-  display: none;
+/* --------------------------------------------------------------------------------------------------- */
+.section2 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 844px;
+  top: 636px;
+}
+ .section2__title {
   position: absolute;
-  top: 1000px;
+  font-family: MontserratSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  color: #E51937;
+  width: 288px;
+  height: 86px;
+  top: 66px;
+  left: 45px;
+ }
+ .section2__img {
+    background: url(./img/2013-tesla-model-s-big.png);
+    position: absolute;
+    width: 1270px;
+    height: 844px;
+    top: 56px;
+    left: -35px;
+ }
+ .section2__aside {
+    position: relative;
+    background: #E51937;
+    width: 440px;
+    height: 900px;
+    top: 0;
+    right: 0;
+    left: 964px;
+ }
+ .section2__aside-headline {
+   position: relative;
+   width: 316px;
+   height: 254px;
+   top: 52px;
+   left: 52px;
+ }
+.section2__aside-title, .section2__aside-text, 
+.section3__aside-title, .section3__aside-text,
+.list__items-title {
+  font-family: MontserratSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.section2__aside-text, .section3__aside-text {
+  font-family: MontserratMedium;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 13px;
+  line-height: 18px;
+}
+.section2__aside-block {
+  position: relative;
+  width: 269px;
+  height: 268px;
+  top: 106px;
+  left: 48px;
+  color: #FFFFFF;
+}
+.block__display-text-big, .block__volume-text-big {
+  font-family: MontserratSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+}
+.block__display-text, .block__wifi-text-big, .block__volume_text {
+  font-family: MontserratSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+.block__display-text-small, .block__wifi-text-small, .block__volume-text-small {
+  font-family: MontserratRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+.block__display, .block__wifi, .block__volume {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.block__display-img {
+  position: absolute;
+  top: 12px;
+  left: 4px;
+}
+.dispaly__text {
+  position: absolute;
+  left: 58px;
+}
+.block__display-text {
+ margin-left: 10px;
+}
+.block__display-text-small {
+  margin-top: -2px;
+}
+.block__wifi {
+  top: 102px;
+}
+
+.block__wifi-img {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.wifi__text {
+  position: absolute;
+  left: 64px;
+}
+.block__wifi-text-big {
+  line-height: 18px;
+}
+.block__wifi-text-small {
+  margin-top: 2px;
+}
+
+.block__volume  {
+  top: 196px;
+}
+.block__volume-img {
+  position: absolute;
+  top: 13px;
+  left: 4px;
+}
+.volume__text {
+  position: absolute;
+  left: 64px;
+}
+.block__volume-text-small {
+  margin-top: -2px;
+}
+.section2__aside-box, .section3__aside-container  {
+  position: relative;
+  width: 347px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  top: 273px;
+  left: 49px;
+}
+.box__learn, .container__learn {
+  display: flex;
+}
+.box__learn-img, .container__learn-img {
+  position: absolute;
+  top: 10px;
+}
+.learn__text {
+  position: absolute; 
+  left: 30px;
+  top: 13px;
+}
+.learn__link {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.learn__link:hover {
+  font-size: 15px;
+}
+.section2__btn, .section3__btn {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  background-color: #E51937;
+  border: 2px solid #fff;
+  left: 186px;
+  top: 3px;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.section2__btn:hover, .section3__btn:hover {
+  color: #E51937;
+  background-color: #fff;
+}
+/* адаптив 2 секции--------------------------------- */
+@media (max-width: 768px) {
+  .section2 {
+    width: 768px;
+    height: 987px;
+    top: 662px;
+  }
+  .section2__img {
+    background: url(./img/2013-tesla-model-s-cockpit.png);
+    width: 768px;
+    height: 502px;
+    top: 0px;
+    left: 0px;
+ }
+  .section2__title {
+    top: 10px;
+    left: 444px;
+   }
+  .section2__aside {
+    width: 768px;
+    height: 488px;
+    top: 502px;
+    left: 0;
+  }
+  .section2__aside-headline {
+    top: 55px;
+    left: 44px;
+  }
+  .section2__aside-text {
+    margin-top: 22px;
+  }
+  .section2__aside-block {
+    top: -198px;
+    left: 460px;
+    color: #FFFFFF;
+  }
+  .block__wifi {
+    top: 90px;
+  }
+  .block__volume {
+    top: 178px;
+  }
+  .section2__aside-box, .section3__aside-container {
+    width: 459px;
+    height: 56px;
+    top: -142px;
+    left: 166px;
+  }
+  .box__learn-img {
+    position: absolute;
+    top: 12px;
+  }
+  .learn__img, .container__learn-img {
+    width: 31px;
+    height: 31px;
+  }
+  .learn__text {
+    left: 41px;
+    top: 18px
+  }
+  .learn__link {
+    font-size: 16px;
+  }
+  .learn__link:hover {
+    font-size: 18px;
+  }
+  .section2__btn, .section3__btn {
+    width: 221px;
+    height: 55px;
+    left: 238px;
+    top: 0px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .section2 {
+    width: 375px;
+    height: 641px;
+    top: 328px;
+    overflow: hidden;
+  }
+  .section2__img {
+    background: url(./img/2013-tesla-model-s-small.png);
+    width: 375px;
+    height: 337px;
+    left: 0px;
+  }
+  .section2__title {
+    display: none;
+   }
+  .section2__aside {
+    width: 375px;
+    height: 304px;
+    top: 326px;
+    left: 0;
+  }
+  .section2__aside-headline {
+    top: 17px;
+    left: 33px;
+  }
+  .section2__aside-text {
+    margin-top: 11px;
+  }
+  .section2__aside-block {
+    display: none;
+  }
+  .section2__aside-box {
+    display: none;
+  }
+}
+/* 3 секция--------------------------------------------------------------------------------------- */
+.section3 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 900px; 
+  top: 636px;
+}
+.section3__aside {
+  position: relative;
+  width: 404px;
+  height: 900px; 
+  background: #E51937;
+  top: 0;
+}
+.section3__aside-headline {
+   position: relative;
+   width: 316px;
+   height: 220px;
+   top: 52px;
+   left: 20px;
+}
+.section3__aside-list {
+  position: relative;
+  width: 320px;
+  height: 236px;
+  top: 100px;
+  left: 20px;
+}
+.list__items-title {
+  text-transform: none;
+  margin-bottom: 28px;
+}
+li {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  list-style-type: none;
+  display: flex;
+  height: 25px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.list__item1-text {
+  margin-right: 59px;
+}
+.list__item2-text {
+  margin-right: 85px;
+}
+.list__item3-text {
+  margin-right: 33px;
+}
+.list__item3-text-small {
+  opacity: 0.7;
+  font-size: 10px;
+}
+.list__item4-text {
+  margin-right: 46px;
+}
+.list__item5-text {
+  margin-right: 40px;
+}
+.section3__aside-wrap {
+  position: relative;
+  width: 290px;
+  height: 92px;
+  display: flex;
+  top: 202px;
+  left: 30px;
+}
+.wrap__shield-img {
+  margin: 10px 22px 0 0;
+}
+.wrap__shield-text-big, .wrap__shield-text-small {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #FFFFFF;
+}
+.wrap__shield-text-small {
+  font-size: 25px;
+  margin-top: -10px;
+}
+.section3__aside-container {
+ top: 250px;
+ left: 2px;
+}
+.section3__img-models {
+  background: url(./img/Model.png) no-repeat;
+  position: absolute;
+  width: 931px;
+  height: 269px;
+  top: 145px;
+  left: 610px;
+}
+.section3__img-car {
+  background: url(./img/Carframe.png) no-repeat;
+  position: absolute;
+  width: 1049px;
+  height: 540px;
+  top: 220px;
+  left: 310px;
+}
+.section3__scheme1, .section3__scheme2, .section3__scheme3 {
+  display: flex;
+  position: absolute;
+  width: 245px;
+}
+.section3__scheme1 {
+  top: 222px;
+  left: 574px;
+}
+.section3__scheme2 {
+  top: 174px;
+  left: 852px;
+}
+.section3__scheme3 {
+  top: 589px;
+  left: 908px;
+}
+.section3__scheme3-text {
+  margin-top: 93px;
+}
+.section3__scheme1-pic {
+  background: url(./img/group/Group14-b.png);
+  width: 14px;
+  height: 281px;
+  margin-right: 5px;
+}
+.section3__scheme2-pic {
+  background: url(./img/group/Group15-b.png);
+  width: 14px;
+  height: 132px;
+}
+.section3__scheme3-pic {
+  background: url(./img/group/Group16-b.png);
+  width: 14px;
+  height: 118px;
+}
+.section3__scheme1-text, .section3__scheme2-text, .section3__scheme3-text {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 15px;
+  color: #000000;
+}
+.logo {
+  position: absolute;
+  top: 850px;
+  left: 1293px;
+}
+/* ---------------------------------------------- */
+@media (max-width: 768px) {
+  .section3 {
+    max-width: 768px;
+    height: 975px; 
+    top: 1164px;
+  }
+  .section3__img-models {
+    background: url(./img/Model-middle.png) no-repeat;
+    width: 750.15px;
+    height: 386.16px;
+    top: 70px;
+    left: 105px;
+  }
+  .section3__img-car {
+    background: url(./img/Carframe-middle.png) no-repeat;
+    width: 750.15px;
+    height: 386.16px;
+    top: 114px;
+    left: 10px;
+  }
+  .section3__scheme1-pic {
+    background: url(./img/group/Group14-m.png);
+    width: 10px;
+    height: 201px;
+    margin-right: 5px;
+  }
+  .section3__scheme2-pic {
+    background: url(./img/group/Group15-m.png);
+    width: 10px;
+    height: 94.4px;
+  }
+  .section3__scheme3-pic {
+    background: url(./img/group/Group16-m.png);
+    width: 10px;
+    height: 84px;
+    margin-right: 12px;
+  }
+  .section3__scheme1, .section3__scheme2 {
+    width: 140px;
+  }
+  .section3__scheme3 {
+    width: 190px;
+  }
+  .section3__scheme1 {
+    top: 114px;
+    left: 182px;
+  }
+  .section3__scheme2 {
+    top: 80px;
+    left: 382px;
+  }
+  .section3__scheme3 {
+    top: 374px;
+    left: 421px;
+  }
+  .section3__scheme3-text {
+    margin-top: 50px;
+  }
+  .section3__scheme1-text, .section3__scheme2-text, .section3__scheme3-text {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  .section3__aside {
+    width: 768px;
+    height: 487px; 
+    background: #E51937;
+    top: 538px;
+  }
+  .section3__aside-headline {
+    width: 316px;
+    height: 220px;
+    top: 62px;
+    left: 44px;
+  }
+  .section3__aside-list {
+    position: relative;
+    width: 320px;
+    height: 236px;
+    top: -159px;
+    left: 433px;
+  }
+  .section3__aside-wrap {
+    display: none;
+  }
+  .section3__aside-container {
+    top: -86px;
+    left: 165px;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .section3 {
+    max-width: 375px;
+    height: 604px; 
+    top: 654px;
+  }
+  .section3__img-models {
+    background: url(./img/Model-small.png) no-repeat;
+    width: 375px;
+    height: 269px;
+    top: 48px;
+    left: 7px;
+  }
+  .section3__img-car {
+    background: url(./img/Carframe-small.png) no-repeat;
+    width: 361.83px;
+    height: 186.25px;
+    top: 74px;
+    left: 8px;
+  }
+  .section3__scheme1-pic {
+    background: url(./img/group/Group12.png);
+    width: 5px;
+    height: 97px;
+    margin-right: 5px;
+  }
+  .section3__scheme2-pic {
+    background: url(./img/group/Group14.png);
+    width: 5px;
+    height: 45.5px;
+  }
+  .section3__scheme3-pic {
+    background: url(./img/group/Group13.png);
+    width: 5px;
+    height: 41px;
+    margin-right: 0;
+  }
+  .section3__scheme1 {
+    width: 70px;
+  }
+  .section3__scheme2 {
+    width: 65px;
+  }
+  .section3__scheme3 {
+    width: 95px;
+  }
+  .section3__scheme1 {
+    top: 76px;
+    left: 95px;
+  }
+  .section3__scheme2 {
+    top: 60px;
+    left: 193px;
+  }
+  .section3__scheme3 {
+    top: 200px;
+    left: 211px;
+  }
+  .section3__scheme3-text {
+    margin-top: 34px;
+  }
+  .section3__scheme1-text, .section3__scheme2-text, .section3__scheme3-text {
+    font-size: 7px;
+    line-height: 6px;
+  }
+  .section3__aside {
+    width: 375px;
+    height: 304px; 
+    background: #E51937;
+    top: 294px;
+  }
+  .section3__aside-headline {
+    width: 316px;
+    height: 285px;
+    top: 18px;
+    left: 38px;
+  }
+  .section3__aside-list, .section3__aside-wrap, .section3__aside-container, .logo{
+    display: none;
+  }
 }
